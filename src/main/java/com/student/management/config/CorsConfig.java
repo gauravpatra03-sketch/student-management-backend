@@ -17,7 +17,10 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
 
                 registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:4200")
+                        .allowedOrigins(
+                                "http://localhost:4200",
+                                "https://student-management-frontend-uk9k.onrender.com"
+                        )
                         .allowedMethods("*")
                         .allowedHeaders("*");
 
